@@ -120,7 +120,18 @@
                     "items": {"$ref":"#/definitions/scalarVal"}
                 }
             ],
-            "additionalItems": false
+            "additionalItems": [
+                {
+                    "type": "boolean",
+                    "enum": [true],
+                    "description": "Whether this is a cloud list. Currently unused."
+                },
+                {
+                    "type": "boolean",
+                    "enum": [true],
+                    "description": "Whether the list has been locked."
+                }
+            ],
         },
         "broadcast_message": {
             "type": "string",
