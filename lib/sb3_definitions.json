@@ -126,12 +126,10 @@
             "additionalItems": [
                 {
                     "type": "boolean",
-                    "enum": [true, false],
                     "description": "Whether this is a cloud list. Currently unused."
                 },
                 {
                     "type": "boolean",
-                    "enum": [true, false],
                     "description": "Whether the list has been locked."
                 }
             ],
