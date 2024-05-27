@@ -123,16 +123,6 @@
                     "items": {"$ref":"#/definitions/scalarVal"}
                 }
             ],
-            "additionalItems": [
-                {
-                    "type": "boolean",
-                    "description": "Whether this is a cloud list. Currently unused."
-                },
-                {
-                    "type": "boolean",
-                    "description": "Whether the list has been locked."
-                }
-            ],
             "maxItems": 4
         },
         "broadcast_message": {
