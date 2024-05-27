@@ -113,17 +113,14 @@
         "list": {
             "type": "array",
             "items": [
-                {
-                    "type":"string",
-                    "description": "name of the list"
-                },
+                {"type":"string", "description": "name of the list"},
                 {
                     "type": "array",
                     "description": "contents of the list",
                     "items": {"$ref":"#/definitions/scalarVal"}
                 }
             ],
-            "maxItems": 4
+            "additionalItems": false
         },
         "broadcast_message": {
             "type": "string",
