@@ -113,7 +113,10 @@
         "list": {
             "type": "array",
             "items": [
-                {"type":"string", "description": "name of the list"},
+                {
+                    "type":"string",
+                    "description": "name of the list"
+                },
                 {
                     "type": "array",
                     "description": "contents of the list",
@@ -123,15 +126,16 @@
             "additionalItems": [
                 {
                     "type": "boolean",
-                    "enum": [true],
+                    "enum": [true, false],
                     "description": "Whether this is a cloud list. Currently unused."
                 },
                 {
                     "type": "boolean",
-                    "enum": [true],
+                    "enum": [true, false],
                     "description": "Whether the list has been locked."
                 }
             ],
+            "maxItems": 4
         },
         "broadcast_message": {
             "type": "string",
