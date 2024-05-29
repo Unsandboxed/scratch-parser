@@ -26,13 +26,13 @@
         "stringOrNumber": {
             "oneOf": [
                 {"type": "string"},
-                {"type": "object"},
                 {"type": "number"}
             ]
         },
         "scalarVal": {
             "oneOf": [
                 {"$ref":"#/definitions/stringOrNumber"},
+                {"type": "object"},
                 {"type": "boolean"}
             ]
         },
