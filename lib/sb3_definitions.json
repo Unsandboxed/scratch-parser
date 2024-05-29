@@ -32,7 +32,6 @@
         "scalarVal": {
             "oneOf": [
                 {"$ref":"#/definitions/stringOrNumber"},
-                {"type": "object"},
                 {"type": "boolean"}
             ]
         },
@@ -118,14 +117,6 @@
                     "type": "array",
                     "description": "contents of the list",
                     "items": {"$ref":"#/definitions/scalarVal"}
-                },
-                {
-                    "type": "boolean",
-                    "description": "is it a cloud list (unused)"
-                },
-                {
-                    "type": "array",
-                    "description": "is it a locked list",
                 }
             ],
             "additionalItems": false
