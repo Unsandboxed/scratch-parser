@@ -1,7 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 var test = require('tap').test;
-var JSZip = require('jszip');
+var JSZip = require('@turbowarp/jszip');
 var unzip = require('../../lib/unzip');
 
 var fixtures = {

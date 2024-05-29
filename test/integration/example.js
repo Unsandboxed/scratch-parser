@@ -1,5 +1,5 @@
 var test = require('tap').test;
-var JSZip = require('jszip');
+var JSZip = require('@turbowarp/jszip');
 var data = require('../fixtures/data');
 var parser = require('../../index');
 
