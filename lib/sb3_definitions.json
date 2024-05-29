@@ -25,6 +25,7 @@
         },
         "stringOrNumber": {
             "oneOf": [
+                {"type": "object"},
                 {"type": "string"},
                 {"type": "number"}
             ]
