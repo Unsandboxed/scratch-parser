@@ -120,7 +120,7 @@
                     "items": {"$ref":"#/definitions/scalarVal"}
                 }
             ],
-            "additionalItems": false
+            "additionalItems": {"type": "boolean", "enum": [true], "description": "Whether this list is locked"}
         },
         "broadcast_message": {
             "type": "string",
