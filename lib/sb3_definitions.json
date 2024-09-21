@@ -15,6 +15,12 @@
                 {"type": "null"}
             ]
         },
+        "optionalObject": {
+            "oneOf": [
+                 {"type": "object"},
+                 {"type": "array"}
+             ]
+        },
         "boolOrOptBoolString": {
             "oneOf": [
                 {"type": "string",
@@ -25,13 +31,13 @@
         },
         "stringOrNumber": {
             "oneOf": [
-                {"type": "object"},
                 {"type": "string"},
                 {"type": "number"}
             ]
         },
         "scalarVal": {
             "oneOf": [
+                {"$ref":"#/definitions/optionalObject"},
                 {"$ref":"#/definitions/stringOrNumber"},
                 {"type": "boolean"}
             ]
