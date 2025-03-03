@@ -126,7 +126,7 @@
                     "items": {"$ref":"#/definitions/scalarVal"}
                 }
             ],
-            "additionalItems": {"type": "boolean", "enum": [true,false], "description": "Whether this list is locked"},
+            "additionalItems": {"type": "boolean", "description": "Whether this list is locked"},
             "maxItems": 3
         },
         "broadcast_message": {
