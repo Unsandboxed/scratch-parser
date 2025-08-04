@@ -29,12 +29,7 @@
                 {"type": "number"}
             ]
         },
-        "scalarVal": {
-            "oneOf": [
-                {"$ref":"#/definitions/stringOrNumber"},
-                {"type": "boolean"}
-            ]
-        },
+        "scalarVal": {},
         "assetId": {
             "type": "string",
             "pattern": "^[a-fA-F0-9]{32}$"
