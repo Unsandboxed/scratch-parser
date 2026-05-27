@@ -1,7 +1,7 @@
 {
-    "$id": "https://scratch.mit.edu/sb3_definitions.json",
+    "$id": "https://unsandboxed.org/ubp_definitions.json",
     "$schema": "http://json-schema.org/schema#",
-    "description": "Scratch 3.0 Project and Sprite Schema Definitions",
+    "description": "UBP Project Schema Definitions",
     "definitions": {
         "optionalString": {
             "oneOf": [
@@ -14,6 +14,12 @@
                 {"type": "number"},
                 {"type": "null"}
             ]
+        },
+        "optionalObject": {
+            "oneOf": [
+                 {"type": "object"},
+                 {"type": "array"}
+             ]
         },
         "boolOrOptBoolString": {
             "oneOf": [
@@ -114,7 +120,8 @@
                     "items": {"$ref":"#/definitions/scalarVal"}
                 }
             ],
-            "additionalItems": false
+            "additionalItems": {"type": "boolean", "description": "Whether this list is locked"},
+            "maxItems": 3
         },
         "broadcast_message": {
             "type": "string",
@@ -369,7 +376,7 @@
                 },
                 "rotationStyle": {
                     "type": "string",
-                    "enum": ["all around", "don't rotate", "left-right"]
+                    "enum": ["all around", "don't rotate", "left-right", "looking"]
                 },
                 "layerOrder": {
                     "type": "integer",
