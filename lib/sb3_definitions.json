@@ -112,6 +112,10 @@
                     "type": "array",
                     "description": "contents of the list",
                     "items": {"$ref":"#/definitions/scalarVal"}
+                },
+                {
+                    "type": "boolean",
+                    "description": "optional locked state for Unsandboxed-compatible SB3 lists"
                 }
             ],
             "additionalItems": false
